@@ -4,7 +4,7 @@ const Header = () => {
   return (
     <header>
         <div>
-            <img src="R&M.png" alt="" />
+            <img src="R&M.png" alt="Rick & Morty Logo" />
         </div>
     </header>
   )
