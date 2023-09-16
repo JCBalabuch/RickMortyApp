@@ -4,7 +4,7 @@ const Header = () => {
   return (
     <header>
         <div>
-            <img src="../../../public/R&M.png" alt="" />
+            <img src="R&M.png" alt="" />
         </div>
     </header>
   )
