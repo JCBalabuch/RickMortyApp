@@ -1,0 +1,20 @@
+footer {
+    height: 10svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.logoJcbs {
+    height: 5svh;
+}
+
+.divLogo > img {
+    height: 100%;
+    object-fit: cover;
+}
+
+footer > h5 {
+    color: var(--nm-text2);
+}
