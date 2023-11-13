@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 
-const useFetchData = (url) => {
+export const useFetchData = (url) => {
     const [data, setData] = useState([]);
 
     useEffect(()=> {
@@ -13,4 +13,23 @@ const useFetchData = (url) => {
   return data
 };
 
-export default useFetchData
+
+export const useFetchData2 = (url, page, status, species) => {
+    const [data, setData] = useState([]);
+  
+    useEffect(()=> {
+        (async () => {
+            let apiUrl = `${url}?page=${page}`;
+            if (status) {
+              apiUrl += `&status=${status}`;
+            }
+            if (species) {
+              apiUrl += `&species=${species}`;
+            }
+            const response = await fetch (apiUrl);
+            const data = await response.json();
+            setData(data.results)
+        })();
+    }, [url, page, status, species]);
+  return data
+  };

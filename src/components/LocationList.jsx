@@ -1,4 +1,4 @@
-import useFetchData from "./useFetchData";
+import { useFetchData } from "./useFetchData";
 
 const LocationList = () => {
   const locationList = useFetchData("https://rickandmortyapi.com/api/location");

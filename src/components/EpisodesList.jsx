@@ -1,4 +1,4 @@
-import useFetchData from "./useFetchData";
+import { useFetchData } from "./useFetchData";
 
 const EpisodesList = () => {
   const episodesList = useFetchData("https://rickandmortyapi.com/api/episode");
